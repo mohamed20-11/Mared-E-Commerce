@@ -1,0 +1,43 @@
+<table class="table table-striped d-none d-lg-block " id="allProductTable" aria-describedby="allProductTable_info">
+    <thead class="table-light text-center">
+      <tr>
+        <th scope="col">
+        </th>
+        <th scope="col"> product Code</th>
+        <th scope="col"> product Name</th>
+        <th scope="col"> Current Price</th>
+        <th scope="col">Offer Price </th>
+        <th scope="col">Quantity</th>
+        <th scope="col p-4">Action</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor="let Offer of OfferList">
+        <td scope="row">
+        </td>
+        <td class=" px-3 py-1">
+            #{{Offer.Id}}
+        </td>
+        <td class="text-center px-3 py-1"> {{Offer.Name}} </td>
+        <td class=" px-3 py-1"> {{Offer.OldPrice}} </td>
+        <td class="col px-3 py-1"> 
+            <input type="text"  class="form-control-plaintext" id="staticEmail2">
+
+        </td>
+
+
+        <td class="text-center  pl-4 py-1"> {{Offer.Quantity}} Unit </td>
+        <td class=" px-5 py-1">
+
+            <div class="btn-box d-flex flex-row justify-content-between">
+                <div class="btn ms-1 bg-danger">
+                    <!-- cancel -->
+                    <button>
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </div>
+            </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>

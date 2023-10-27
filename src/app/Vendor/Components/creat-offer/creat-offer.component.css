@@ -1,0 +1,18 @@
+.upload-img-label{
+  border: .3rem dashed var(--line-color);
+  border-radius: 1rem;
+}
+.upload-img-btn{
+  background-color: var(--sec-color);
+  width: 49%;
+}
+.creat-offer-form input,.form-floating{
+  margin-bottom: 1rem;
+}
+.price,.date,.time{
+  gap: 13px;
+}
+.add-offer-btn{
+  background-color: var(--sec-color);
+}
+

@@ -1,0 +1,188 @@
+<!-- start product details -->
+<section class="product-details pt-5 mb-5 pb-4 bg-white">
+  <div class="container">
+    <p class="lead" style="color: #c5c5c5;">You Reviewing Your Product Details as Customer</p>
+    <div class="row align-items-center">
+      <div class="col-xl-5 col-lg-5 col-md-6 p-0 col-sm-12">
+        
+        <div class="item-img">
+          <img src="./../../../assets/img/basil-leaves-400x400.png" alt="">
+        </div>
+      </div>
+      <div class="col-xl-6 offset-1 col-lg-5 col-md-5 m-sm-auto ps-sm-5 pe-sm-5 col-12 ms-0">
+        <div class="detail-content bg-white ">
+          <h5 class="pt-4 mt-md-5">MCCORMICK® BASIL LEAVES</h5>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <br>
+          <br>
+          <span class="text-decoration-line-through text-danger pe-2">120 EG</span>
+          <span class="fw-bold">100 EG</span>
+          <p>McCormick Basil Leaves have an aromatic, sweet flavor that blends well with garlic and tomatoes. This
+            pantry staple is essential in so many of your family’s favorite recipes, including pizza, pasta, marinara
+            sauce and minestrone.</p>
+          <div class="mb-5">
+            <div class="d-flex align-items-center">
+              <input type="number" min="1" value="1" class="amount">
+              <i class="fa-regular fa-heart ms-3 me-3"></i>
+              <button class="add-to-cart text-white disabled">Add To Cart</button>
+            </div>
+
+          </div>
+          <span class="d-block mb-3"><b>Category: </b><span class="text-secondary">Food | Food additives</span></span>
+          <span>Share This <i class="fa-brands fa-facebook ms-2"></i> <i class="fa-brands fa-pinterest"></i> <i
+              class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- end product details -->
+<!-- start more info section -->
+<section class="more-info">
+  <ul class="container d-flex list-unstyled pb-3 h6">
+    <li class="review-btn me-5">
+      <button id="reviweLink" (click)="getReview()">Reviews</button>
+      <span class="botm_brdr" [style.width]="!isReview? '0px':'90px'"></span>
+    </li>
+    <li class="review-btn">
+      <button id="selarLink" (click)="getSellarInfo()">Your Info</button>
+      <span class="botm_brdr" [style.width]="!isSellarInfo? '0px':'105px'"></span>
+    </li>
+  </ul>
+  <div class="reviews" id="reviews" *ngIf="isReview">
+    <div class="container bg-white p-5 mt-5">
+      <div class="review">
+        <div class="d-flex justify-content-between">
+          <div>
+            <img src="./../../../assets/img/OIP.jpg" width="10%" alt="">
+            <span class="ms-2">Rafiqul Islam</span>
+          </div>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+        </div>
+        <p class="text-secondary ms-5 ps-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates animi
+          deserunt nulla eius quibusdam odio.</p>
+      </div>
+      <div class="review">
+        <div class="d-flex justify-content-between">
+          <div>
+            <img src="./../../../assets/img/OIP.jpg" width="10%" alt="">
+            <span class="ms-2">Rafiqul Islam</span>
+          </div>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+        </div>
+        <p class="text-secondary ms-5 ps-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates animi
+          deserunt nulla eius quibusdam odio.</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="sellar-info mt-5 mb-5" id="selarInfo" *ngIf="isSellarInfo">
+    <div class="container">
+      <div class="d-flex">
+        <div class="d-flex justify-content-start align-items-sm-center mb-sm-0 mb-3">
+          <div class="sellar-img me-3">
+            <img src="./../../../assets/img/OIP.jpg" width="100%" alt="">
+          </div>
+          <div>
+            <div>Ridoy Rock</div>
+            <div class="rate">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+          </div>
+
+        </div>
+        <div>
+          <span><b>Products:</b> 120</span>
+          <br>
+          <span><b>Categries:</b> Food & Drinks</span>
+          <br>
+          <span><b>Location:</b>Elredwan, Aswan</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end more info section -->
+<!-- start related-products section -->
+<section class="related-products pt-5 mb-5">
+  <div class="container">
+    <div class="row bg-white justify-content-center p-3">
+      <div class="col-xl-3 col-md-3 p-0 similar-item h-25">
+        <div class="similar-img">
+          <img src="./../../../assets/img/mccormick_whole_black_peppercorns_800x800.png" alt="">
+        </div>
+        <h6 class="item-name text-center">McCormick</h6>
+        <div class="price d-flex justify-content-center">
+          <span class="h6 text-decoration-line-through me-3 text-danger">100</span>
+          <span class="h6">90</span>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-3 p-0 similar-item h-25">
+        <div class="similar-img">
+          <img src="./../../../assets/img/mccormick_whole_black_peppercorns_800x800.png" alt="">
+        </div>
+        <h6 class="item-name text-center">McCormick</h6>
+        <div class="price d-flex justify-content-center">
+          <span class="h6 text-decoration-line-through me-3 text-danger">100</span>
+          <span class="h6">90</span>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-3 p-0 similar-item h-25">
+        <div class="similar-img">
+          <img src="./../../../assets/img/mccormick_whole_black_peppercorns_800x800.png" alt="">
+        </div>
+        <h6 class="item-name text-center">McCormick</h6>
+        <div class="price d-flex justify-content-center">
+          <span class="h6 text-decoration-line-through me-3 text-danger">100</span>
+          <span class="h6">90</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end related-products section -->

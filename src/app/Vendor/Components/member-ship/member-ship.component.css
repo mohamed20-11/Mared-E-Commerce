@@ -1,0 +1,30 @@
+.card
+{
+    
+}
+/* .card-title
+{
+    color: #FFBB38;
+} */
+.card img{
+    width: 100px;
+    align-items: center;
+}
+.free .btn , .gold .btn
+{
+    background-color: #1A936F;
+    color: white;
+    border-radius: 10px;
+}
+.silver
+{
+    background-color: #1A936F;
+    color: white ;
+}
+.silver .btn
+{
+    color: #1A936F;
+    background-color: white;
+    border: 2px solid #1A936F;
+    border-radius: 10px;
+}

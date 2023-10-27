@@ -1,0 +1,140 @@
+<section class="p-3 ">
+  <div class="container">
+      <div class="row">
+
+          <!-- Main content START -->
+
+
+                  <!-- Personal info START -->
+                  <div class="card border">
+                      <!-- Card header -->
+                      <div class="card-header border-bottom">
+                          <h4 class="card-header-title">Personal Information</h4>
+                      </div>
+
+                      <!-- Card body START -->
+                      <div class="card-body">
+                          <!-- Form START -->
+                          <form class="row g-3">
+                              <!-- Profile photo -->
+                              <div class="col-12">
+                                  <label class="form-label p-2"style="color: var(--bs-gray-500);">Upload your profile photo<span
+                                          class="text-danger">*</span></label>
+                                  <div class="d-flex align-items-center " style="justify-content: space-evenly  ;">
+                                      <img id="uploadfile-1-preview"
+                                          class="w-25  border border-white border-3 shadow" [src]="url"
+                                          alt="Vendor image">
+                                      <!-- Upload button -->
+                                      <label class="btn btn-sm btn-primary mb-0 p-2"
+                                          style="background-color: #1A936F !important;" for="uploadfile-1">
+                                          <i class="fa-solid fa-plus"></i>
+                                          Change Image</label>
+                                      <input id="uploadfile-1" class="form-control d-none btn btn-sm" type="file">
+                                  </div>
+                              </div>
+
+                              <!-- Name -->
+                              <div class="col-md-6 mt-3">
+                                  <label class="form-label" style="color: var(--bs-gray-500);">Full Name<span
+                                          class="text-danger">*</span></label>
+                                  <input type="text" class="form-control" value="Ahmed Gamal"
+                                      placeholder="Enter your full name">
+                              </div>
+
+                              <!-- Email -->
+                              <div class="col-md-6 mt-3">
+                                  <label class="form-label" style="color: var(--bs-gray-500);">Email address<span
+                                          class="text-danger">*</span></label>
+                                  <input type="email" class="form-control" value="ahmed@a.com"
+                                      placeholder="Enter your email ">
+                              </div>
+
+                              <!-- Mobile -->
+                              <div class="col-md-6 mt-3">
+                                  <label class="form-label" style="color: var(--bs-gray-500);">Mobile number<span
+                                          class="text-danger">*</span></label>
+                                  <input type="text" class="form-control" value="+201154439339"
+                                      placeholder="Enter your mobile number">
+                              </div>
+
+                              <!-- Nationality -->
+                              <div class="col-md-6 mt-3">
+                                  <label class="form-label" style="color: var(--bs-gray-500);">Country<span
+                                          class="text-danger">*</span></label>
+                                  <div class="dropdown">
+                                      <button class="btn dropdown-toggle"
+                                          style="background-color: #1A936F !important; color:white;" type="button"
+                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                          Select Your Country
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Egypt</a></li>
+                                          <li><a class="dropdown-item" href="#">Saudi Arabia</a></li>
+                                          <li><a class="dropdown-item" href="#">USA</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+
+                              <!-- Date of birth -->
+                              <div class="col-md-6 mt-3">
+                                  <label class="form-label" style="color: var(--bs-gray-500);">Date of Birth<span
+                                          class="text-danger">*</span></label>
+                                  <input type="date" class="form-control flatpickr flatpickr-input"
+                                      value="29 Aug 2000" placeholder="Enter date of birth"
+                                      data-date-format="d M Y">
+                              </div>
+
+                              <!-- Gender -->
+                              <div class="col-md-6 mt-3">
+                                  <label class="form-label mt-2" style="color: var(--bs-gray-500);">Select Gender<span
+                                          class="text-danger">*</span></label>
+                                  <div class="d-flex gap-4">
+                                      <div class="form-check radio-bg-light">
+                                          <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                              id="flexRadioDefault1" checked="">
+                                          <label class="form-check-label mt-2" style="color: var(--bs-gray-500);"
+                                              for="flexRadioDefault1">
+                                              Male
+                                          </label>
+                                      </div>
+                                      <div class="form-check radio-bg-light">
+                                          <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                              id="flexRadioDefault2">
+                                          <label class="form-check-label mt-2" style="color: var(--bs-gray-500);"
+                                              for="flexRadioDefault2">
+                                              Female
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <!-- Address -->
+                              <div class="col-12 mt-3">
+                                  <label class="form-label" style="color: var(--bs-gray-500);">Address</label>
+                                  <textarea class="form-control" rows="3"
+                                      spellcheck="false">Medan Abo Elhagag Luxor - Egypt </textarea>
+                              </div>
+
+                              <div class="col-md-6 mt-3">
+                                  <label class="form-label" style="color: var(--bs-gray-500);">Store Name<span
+                                          class="text-danger">*</span></label>
+                                  <input type="text" class="form-control" value="Hoodie Store"
+                                      placeholder="Example : Mared">
+                              </div>
+
+                              <!-- Button -->
+                              <div class="col-12 text-end mt-3">
+                                  <a href="#" class="btn btn-primary mb-0"
+                                      style="background-color: #1A936F !important;">
+                                      <i class="fa-regular fa-circle-check"></i>
+                                      Save Changes</a>
+                              </div>
+                          </form>
+                          <!-- Form END -->
+                      </div>
+                      <!-- Card body END -->
+                  </div>
+                  <!-- Personal info END -->
+                  </div>
+  </div>
+</section>

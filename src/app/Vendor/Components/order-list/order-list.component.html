@@ -1,0 +1,130 @@
+<div class="h1 m-5">
+  Order List
+</div>
+<div class="container">
+  <div class=" row w-100 mr-5 mb-4 p-4 align-items-center pl-5">
+    <div class=" g-3 col">
+      <div class="col-lg-4">
+        <input type="text" class="form-control form-control" placeholder="Search">
+      </div>
+    </div>
+    <div class=" col-lg-3">
+      <select class="form-select" aria-label="Default select example"> aria-expanded="false"
+        [(ngModel)]="OrderStatus" >
+        Status
+        <option value="">Status</option>
+        <option class="dropdown-item" value="Success">Success</option>
+        <option class="dropdown-item" value="Cancel">Cancel</option>
+        <option class="dropdown-item" value="Pending">Pending</option>
+      </select>
+    </div>
+  </div>
+</div>
+<!--  -->
+<h1> {{OrderStatus}} </h1>
+<!-- table -->
+<table class="table table-striped d-none d-lg-block " id="allProductTable" aria-describedby="allProductTable_info">
+  <thead class="table-light text-center">
+    <tr>
+      <th scope="col">
+      </th>
+      <th scope="col">Produt</th>
+      <th scope="col">Order Id</th>
+      <th scope="col">Customer</th>
+      <th scope="col">Date & TIme </th>
+      <th scope="col">Payment</th>
+      <th scope="col">Status</th>
+      <th scope="col">Amount</th>
+      <th scope="col p-4">Action</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <tr *ngFor="let List of OrderLists">
+      <td scope="row">
+      </td>
+      <td class=" px-3 py-1">
+        <div class="d-flex flex-row justify-content-around ">
+          <img [src]="List.Image" class=" rounded product_img">
+          <div class="h4 ms-2 ">
+          </div>
+        </div>
+      </td>
+      <td class="text-center px-3 py-1">{{List.Id}}</td>
+      <td class=" px-3 py-1">{{List.Customer}}</td>
+      <td class=" px-3 py-1"> {{List.Date}}</td>
+      <td class=" px-3 py-1">
+        <div>
+          {{List.Payment}}
+        </div>
+      </td>
+      <td class=" px-4 py-1">
+        <div
+          [class]="{'cancel':List.Status=='Cancel', 'success':List.Status=='Success', 'pending':List.Status=='Pending'}">
+          {{List.Status}} </div>
+      </td>
+      <td class="text-center  pl-4 py-1"> {{List.Amount}} </td>
+      <td class=" px-5 py-1">
+        <div class="btn-box d-flex flex-row justify-content-between">
+          <div class="btn">
+            <!-- Success -->
+            <button>
+              <i class="fa-regular fa-circle-check"></i>
+            </button>
+          </div>
+          <div class="btn ms-1 bg-danger">
+            <!-- cancel -->
+            <button>
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <a class="dropdown-item" [routerLink]="['/vendor/orderlist',List.Id]">
+          <div class="btn ms-1 details">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- table -->
+
+<!-- card -->
+<div class="d-lg-none  d-flex flex-wrap flex-row mt-2 ">
+  <div class=" card me-2 mb-2 position-relative" *ngFor="let List of OrderLists" style="width: 11rem;">
+    <div class="rating  position-absolute top-0 mt-2 ms-2">
+      <div class="star">
+       Customer: {{List.Customer}}
+      </div>
+    </div>
+    <div class="dropdown position-absolute top-0 end-0 mt-2 me-2">
+      <a class="btn dropdown-btn rounded-circle btn-sm px-2 py-1 " role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <i class="fa fa-ellipsis-v"></i>
+      </a>
+
+      <div class="dropdown-menu">
+        <a class="dropdown-item" [routerLink]="[List.Id]">Show</a>
+        <a class="dropdown-item">Success</a>
+        <a class="dropdown-item">Cancel</a>
+      </div>
+    </div>
+    <img [src]="List.Image" class="card-img-top w-100" alt="...">
+    <div class="card-body prod-card-body text-black">
+      <h5 class="card-title">Code: {{List.Id}}</h5>
+      <div class="pro-price text-third">Amount: {{List.Amount}} </div>
+      <div class="d-flex justify-content-between my-2">
+        <div class="SKU">
+          <span class="text-third">{{List.Payment}} :</span>
+        </div>
+        <div class="stock">
+          <span class="text-third pay"> {{List.Status}} </span>
+        </div>
+      </div>
+      <div class="Publish">
+        <span class="text-third">{{List.Date}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!--card-->

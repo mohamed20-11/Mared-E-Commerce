@@ -1,0 +1,36 @@
+
+    <div class="row m-0 align-items-center">
+      <div class="col-6 upload-img text-center">
+        <label for="inputFile" class="w-75 upload-img-label">
+          <input type="file" class="input-file p-5" id="inputFile" hidden>
+          <div class="text-center p-4">
+            <i class="fa-solid fa-arrow-up-from-bracket fs-1 mb-3 text-secondary"></i>
+            <div>Drag And Drop Image<br>OR</div>
+            <span class="btn upload-img-btn mt-1">Browse</span>
+          </div>
+        </label>
+      </div>
+      <div class="col-5 p-0">
+        <form action="" class="creat-offer-form w-100">
+          <input type="text" class="form-control" id="offerTitle" placeholder="Title">
+      <div class="form-floating">
+        <textarea class="form-control h-100" placeholder="Leave a comment here" id="descTextarea" rows="5"></textarea>
+        <label for="descTextarea" class="desc text-secondary">Description</label>
+      </div>
+          <div class="price d-flex">
+          <input type="number" class="form-control" id="offerTitle" placeholder="Total Price">
+          <input type="text" class="form-control" id="offerTitle" placeholder="Quantity">
+          </div>
+          <div class="date d-flex">
+          <input type="text" class="form-control text-secondary" id="offerTitle" placeholder="Start Date" onmousedown="(this.type='date')" onmouseleave="(this.type='text')">
+          <input type="text" class="form-control text-secondary" id="offerTitle" placeholder="End Date" onmousedown="(this.type='date')" onmouseleave="(this.type='text')">
+          </div>
+          <div class="time d-flex">
+          <input type="text" class="form-control text-secondary" id="offerTitle" placeholder="Start Time" onmousedown="(this.type='time')" onmouseleave="(this.type='text')">
+          <input type="text" class="form-control text-secondary" id="offerTitle" placeholder="End Time" onmousedown="(this.type='time')" onmouseleave="(this.type='text')">
+          </div>
+          <button class="btn add-offer-btn px-3 mb-5">Add</button>
+        </form>
+      </div>
+    </div>
+

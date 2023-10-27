@@ -1,0 +1,246 @@
+<body>
+<div class="">
+        <div class="h1">
+            Order Details
+        </div>
+    </div>
+    <div class="container" *ngFor="let Order of OrderDetails">
+        <div class="h1">
+            Order # {{Order.Id}}
+        </div>
+        <div class="blade">
+           {{Order.Date}}
+        </div>
+    </div>
+    <!-- order -->
+    <div class="container mt-5 pt-4">
+        <div class="res">
+        <div class="row justify-content-between ">
+            <!-- Order details card -->
+            <div class="row col-lg-8 cust">
+                <!-- title -->
+                <div class="row py-3 mt-5 cart">
+                    <div class="col-lg-7 h5">
+                        PRODUCTS
+                    </div>
+                    <div class="col-lg-2 h5 ">
+                        PRICE
+                    </div>
+                    <div class="col-lg-1 h5 ">
+                        QTY
+                    </div>
+                    <div class="col-lg-2 h5">
+                        TOTAL
+                    </div>
+                </div>
+                <!-- end title -->
+                <!-- body -->
+
+                <div class="row p-3 cart">
+                    <div class="row col-lg-7  align-items-center">
+                        <div class="col-lg-4 hid">
+                            <img class="w-100 h-100" src="./assets/img/product-image-12-346x310.jpg">
+                        </div>
+                        <div class="col-lg-7 h4">
+                            Wooden Chair
+                        </div>
+                    </div>
+                    <div class="col-lg-2 h4 p-4 text-muted">
+                        $841
+                    </div>
+                    <div class="col-lg-1 h4 p-4 text-muted">
+                        2
+                    </div>
+                    <div class="col-lg-2 h4 p-4 text-muted">
+                        8200$
+                    </div>
+                </div>
+                <!-- row2 -->
+                <div class="row p-3 cart">
+                    <div class="row col-lg-7  align-items-center">
+                        <div class="col-lg-4 hid">
+                            <img class="w-100 h-100" src="./assets/img/product-image-12-346x310.jpg">
+                        </div>
+                        <div class="col-lg-7 h4">
+                            Wooden Chair
+                        </div>
+                    </div>
+                    <div class="col-lg-2 h4 p-4 text-muted">
+                        $841
+                    </div>
+                    <div class="col-lg-1 h4 p-4 text-muted">
+                        2
+                    </div>
+                    <div class="col-lg-2 h4 p-4 text-muted">
+                        8200$
+                    </div>
+                </div>
+                <!-- row 3 -->
+                <div class="row cart">
+                    <div class="col-lg-8"></div>
+                    <div class="col-lg-2 h4 text-muted">
+                        Subtotal
+                    </div>
+                    <div class="col-lg-2 h4 text-muted">
+                        $5000.25
+                    </div>
+                </div>
+                <div class="row cart">
+                    <div class="col-lg-8"></div>
+                    <div class="col-lg-2 h4 text-muted">
+                        Discount
+                    </div>
+                    <div class="col-lg-2 h4 text-muted">
+                        $0.0
+                    </div>
+                </div>
+                <div class="row cart">
+                    <div class="col-lg-8"></div>
+                    <div class="col-lg-2 h4 text-muted">
+                        Tax
+                    </div>
+                    <div class="col-lg-2  h4 text-muted">
+                        $230.0
+                    </div>
+                </div>
+                <div class="row cart">
+                    <div class="col-lg-8"></div>
+                    <div class="col-lg-2 h4">
+                        Total
+                    </div>
+                    <div class="col-lg-2 h4">
+                        $2300.0
+                    </div>
+                </div>
+            </div>
+            <!-- end body -->
+            <!-- end Order details crd -->
+            <!-- customer card -->
+            <div class="row col-lg-4 cust px-2 my-3">
+                <div class="row align-items-center pl-5">
+                    <div class="col-lg-4 hid ">
+                        <img class="w-100 h-100 rounded-circle" src="./../../../assets/img/01.jpg">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="h3">
+                            Shamus Tuttle
+                        </div>
+                        <div class="blind">
+                            Customer ID: #58909
+                        </div>
+                    </div>
+                </div>
+                <div class=" h4 text-center">
+                    10 Orders
+                </div>
+                <div >
+                    <div class="h4 pb-3">
+                        Contact info
+                    </div>
+                    <div class="h4 text-muted">
+                        Email: Shamus889@yahoo.com
+                    </div>
+                    <div class="h4 text-muted">
+                        Mobile: +1 (609) 972-22-22
+
+                    </div>
+                </div>
+            </div>
+            <!-- end customer card -->
+        </div>
+        <!-- start -->
+        <div class="row justify-content-between">
+            <!-- Shipping details card -->
+            <div class=" row col-lg-8  cust mt-3 gy-5 px-4 justify-content-between">
+                <div class="col-lg-7">
+                    <div class="h4">
+                        Order was placed (Order ID: #32543)
+                    </div>
+                    <div class="h5 text-muted">
+                        Your order has been placed successfully
+                    </div>
+                </div>
+                <div class="col-lg-3 h5 text-muted">
+                    Tuesday 11:29 AM
+                </div>
+                <div class="col-lg-7 ">
+                    <div class="h4">
+                        Pick-up
+                    </div>
+                    <div class="h5 text-muted">
+                        Pick-up scheduled with courier
+                    </div>
+                </div>
+                <div class="col-lg-3 h5 text-muted">
+                    Tuesday 11:29 AM
+                </div>
+                <div class="col-lg-7 ">
+                    <div class="h4">
+                        Dispatched
+                    </div>
+                    <div class="h5 text-muted">
+                        Item has been picked up by courier
+                    </div>
+                </div>
+                <div class="col-lg-3 h5 text-muted">
+                    Tuesday 11:29 AM
+                </div>
+                <div class="col-lg-7">
+                    <div class="h4">
+                        Dispatched for delivery
+                    </div>
+                    <div class="h5 text-muted">
+                        Package has left an Amazon facility, NY
+                    </div>
+                </div>
+                <div class="col-lg-3 h5 text-muted">
+                    Tuesday 11:29 AM
+                </div>
+                <div class="col-lg-7 mb-5">
+                    <div class="h4">
+                        Delivery
+                    </div>
+                    <div class="h5 text-muted">
+                        Package will be delivered by tomorrow
+                    </div>
+                </div>
+                <div class="col-lg-3 h5 text-muted ">
+                    Tuesday 11:29 AM
+                </div>
+            </div>
+            <!-- end shipping details crd -->
+            <!-- Shipping address -->
+            <div class="col-lg-4  my-2">
+                <div class="cust p-3">
+                    <div class="h4">
+                        Shipping address
+                    </div>
+                    <div class="h4 text-muted px-4 my-3">
+                        45 Roker Terrace
+                        Latheronwheel
+                        KW5 8NW,London
+                        UK
+                    </div>
+
+                </div>
+                <!-- Billing address -->
+                <div class=" mt-5 p-3 cust ">
+                    <div class="h4">
+                        Billing address
+                    </div>
+                    <div class="h4 text-muted px-4 my-3">
+                        45 Roker Terrace
+                        Latheronwheel
+                        KW5 8NW,London
+                        UK
+                    </div>
+                </div>
+                <!-- Billing address -->
+                <!-- end Shipping address -->
+            </div>
+        </div>
+    </div>
+    </div>
+     <!-- end -->
+        <!-- end order -->
+</body>

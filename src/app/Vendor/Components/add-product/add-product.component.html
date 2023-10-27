@@ -1,0 +1,248 @@
+<div class="add-pro mt-5 ">
+    <div class="container bg-light">
+        <div class="addProduct  p-3">
+            <!--page title-->
+            <div class="add-pro-title bg-wihte d-flex flex-column flex-md-row justify-content-between px-3 pt-4">
+                <div class="h4" *ngIf="id==0">Add New Product</div>
+                <div class="h4" *ngIf="id!=0">Edit this Product</div>
+                <form action="" class="published-btn d-flex justify-content-between mb-3 ">
+                    <button class="btn btn-sec-color me-2" type="button">Draft</button>
+                    <button class="btn btn-sec-color " type="button">Publish</button>
+                </form>
+            </div>
+        </div>
+        <div class="row add-info  p-3">
+
+            <div class="col-12 col-md-8 p-3">
+                <!--add product title-->
+                <div class="pro-title bg-wihte mb-3 p-3">
+                    <label for="addproducttitle" class="form-label">Write Title</label>
+                    <input type="text" class="form-control" id="addproducttitle" placeholder="Title for product">
+                </div>
+                <!--description-->
+                <div class="pro-description ">
+                    <div class=" bg-wihte pro-desc-heading d-flex justify-content-between  px-3 pt-4  pb-1 mb-2">
+                        <div class="h4">
+                            Product Description
+                        </div>
+                        <div class="desc-btn">
+                            <button class="btn btn-sm ms-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#description" aria-expanded="false" aria-controls="description"><i
+                                class="fa fa-angle-up "></i></button>
+                        </div>
+                    </div>
+                    <div class="desc-input p-3 bg-wihte  collapse" id="description">
+                        <div id="editor"></div>
+                    </div>
+                </div>
+                <!--product Data-->
+                <div class="pro-data bg-wihte  px-3 pt-4  pb-1 mb-2 mt-3 ">
+                    <div class="pro-desc-heading d-flex justify-content-between border-bottom mb-4">
+                        <div class="h4">
+                            Product Data
+                        </div>
+                        <!--type of product-->
+                        <div class="d-flex justify-content-between ">
+                            <div class="form-check me-2">
+                                <input class="form-check-input" type="checkbox" value="" id="General">
+                                <label class="form-check-label" for="General">
+                                    General
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Downloadable">
+                                <label class="form-check-label" for="Downloadable">
+                                    Downloadable
+                                </label>
+                            </div>
+                        </div>
+                        <div class="data-btn">
+                            <button class="btn btn-sm ms-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#data" aria-expanded="false" aria-controls="data"><i
+                                class="fa fa-angle-up "></i></button>
+                        </div>
+                    </div>
+                    <!--tab-->
+                    <p class="collapse" id="data">
+                        <button class="btn btn-primary  me-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#media" aria-expanded="false" aria-controls="media">Media</button>
+                        <button class="btn btn-primary me-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#price" aria-expanded="false" aria-controls="price">Price</button>
+                        <button class="btn btn-primary  me-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#shipping-info" aria-expanded="false" aria-controls="shipping-info">Shipping
+                            Info</button>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#offer"
+                            aria-expanded="false" aria-controls="offer">Offer</button>
+                    </p>
+                    <div class="collapse" id="media">
+                        <div class="card card-body">
+                            <div class="media">
+                                <div class="row  mt-4 mb-3">
+                                    <div class="col-12 col-md-5">
+                                        <div class="fw text-center">
+                                            Add thumbnail<span class="text-secondary ms-1">(jpg/png)</span>
+                                        </div>
+                                        <div class="upload-img text-center">
+                                            <label for="inputFile" class="mt-2 upload-img-label">
+                                                <input type="file" class="input-file p-5" id="inputFile" hidden>
+                                                <div class="text-center p-4">
+                                                    <i
+                                                        class="fa-solid fa-arrow-up-from-bracket fs-1 mb-3 text-secondary"></i>
+                                                    <div>Drag And Drop Image<br>OR</div>
+                                                    <span class="btn upload-img-btn mt-1">Browse</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="fw text-center">
+                                            Add Gallary<span class="text-secondary ms-1 ">(jpg/png)</span>
+                                        </div>
+                                        <div class="upload-img text-center">
+                                            <label for="formFileMultiple" class="mt-2 upload-img-label">
+                                                <input type="file" class="form-control p-5" id="formFileMultiple"
+                                                    multiple hidden>
+                                                <div class="text-center p-4">
+                                                    <i
+                                                        class="fa-solid fa-arrow-up-from-bracket fs-1 mb-3 text-secondary"></i>
+                                                    <div>Drag And Drop Image<br>OR</div>
+                                                    <span class="btn upload-img-btn mt-1">Browse</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="price">
+                        <div class="card card-body">
+                            <form action="" class="mb-3 row">
+                                <label for="inputPrice" class="col-sm-2 col-form-label">Price</label>
+                                <div class="col-sm-10">
+                                    <input type="number" min="1" class="form-control" id="inputPrice" required>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="collapse" id="shipping-info">
+                        <div class="card card-body">
+                            <form class="row g-1">
+                                <div class="col-12 col-md-3">
+                                    <label for="weight" class="mt-1">Weight (kg) </label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="number" class="form-control" min="1" id="weight" placeholder="0">
+                                </div>
+                            </form>
+                            <form class="row g-1 mt-2">
+                                <div class="col-12 col-md-3">
+                                    <label class="mt-1">Dimensions (cm) </label>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <input type="number" class="form-control" min="1" id="dimensions-length"
+                                        placeholder="Length">
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <input type="number" class="form-control" min="1" id="dimensions-wigth"
+                                        placeholder="Wigth">
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <input type="number" class="form-control" min="1" id="dimensions-hight"
+                                        placeholder="Hight">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="collapse" id="offer">
+                        <div class="card card-body d-flex align-items-center">
+                            <div class="btn col-4 add-offer-btn" routerLink="/vendor/addoffer">Add Offer</div>
+                        </div>
+                    </div>
+
+                    <!--tab-->
+
+                </div>
+            </div>
+            <!--right side-->
+            <div class="col-12 col-md-4 ">
+                <div class="container">
+                    <!--button-->
+                    <button class="btn btn-sec-color col-12 mb-4"
+                        [routerLink]="['user/productdetails', product.id]">Preview Changed</button>
+                    <!--product category-->
+                    <div class="pro-category bg-wihte px-2 p-3 mb-2">
+                        <div class="d-flex justify-content-between mb-4 border-bottom">
+                            <div class="h4">
+                                Category
+                            </div>
+                            <div class="category-btn ">
+                                <button class="btn btn-sm ms-1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#Category" aria-expanded="false" aria-controls="Category"><i
+                                    class="fa fa-angle-up "></i></button>
+                            </div>
+                        </div>
+                        <form action="" class="px-3 collapse" id="Category">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="food">
+                                <label class="form-check-label" for="food">
+                                    Food
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="clothes">
+                                <label class="form-check-label" for="clothes">
+                                    Clothes
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <!--Product Tag-->
+                    <div class="pro-tag bg-wihte px-2 p-3 mb-2">
+                        <div class="d-flex justify-content-between mb-4 border-bottom">
+                            <div class="h4">
+                                SupCategory
+                            </div>
+                            <div class="supcategory-btn ">
+                                <button class="btn btn-sm ms-1" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#SupCategory" aria-expanded="false" aria-controls="SupCategory"><i
+                                        class="fa fa-angle-up "></i></button>
+                            </div>
+                        </div>
+                        <form action="" class="px-3 collapse" id="SupCategory">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Fruit">
+                                <label class="form-check-label" for="Fruit">
+                                    Fruit
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Protein">
+                                <label class="form-check-label" for="Protein">
+                                    Protein
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="vegetables">
+                                <label class="form-check-label" for="vegetables">
+                                    vegetables
+                                </label>
+                            </div>
+                            <div class="form-group d-flex flex-lg-row">
+                                <input type="text" class="form-control me-1" id="addSubcategory" placeholder="Add SubCategory...">
+                                <div class="btn">ADD</div>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .catch(error => {
+            console.error(error);
+        });
+</script>

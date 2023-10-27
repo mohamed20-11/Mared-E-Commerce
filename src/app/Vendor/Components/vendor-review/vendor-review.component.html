@@ -1,0 +1,67 @@
+<div class="">
+  <table>
+    <thead class="bg-white text-secondary">
+      <tr>
+        <th>Your Products</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prd of VProducts">
+        <td {{prd.title}} Titles></td>
+      </tr>
+    </tbody>
+  </table>
+
+<section class="more-info mt-5">
+  <div class="container d-flex list-unstyled h6">
+      <p>Your Reviews</p>
+  </div>
+
+<div class="container bg-white p-5 mt-5">
+  <div class="review">
+    <div class="d-flex justify-content-between">
+      <div>
+        <img src="./../../../assets/img/OIP.jpg" width="10%" alt="">
+        <span class="ms-2">Rafiqul Islam</span>
+      </div>
+      <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+      </div>
+    </div>
+    <p class="text-secondary ms-5 ps-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates animi
+      deserunt nulla eius quibusdam odio.</p>
+  </div>
+  <div class="review">
+    <div class="d-flex justify-content-between">
+      <div>
+        <img src="./../../../assets/img/OIP.jpg" width="10%" alt="">
+        <span class="ms-2">Rafiqul Islam</span>
+      </div>
+      <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+      </div>
+    </div>
+    <p class="text-secondary ms-5 ps-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates animi
+      deserunt nulla eius quibusdam odio.</p>
+  </div>
+</div>
+</section>
+</div>
